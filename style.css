@@ -28,7 +28,7 @@ body {
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #C79BE3;
+    background: linear-gradient(180deg, #c79be6, #9b6bcf); 
     padding: 6px;
     margin: 40px;
     border-radius: 40px;
@@ -41,12 +41,19 @@ body {
     background-color: #b97fdd;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 20px;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+}
+
+.noticia p{
+    text-align: justify;
 }
 
 .img_noticia {
     width: 300px;
     height: 200px;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 footer {
@@ -91,4 +98,65 @@ footer {
     position: static;
     top: 40px;
     left: 30px;
+}
+
+.posicao{
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(180deg, #c79be6, #9b6bcf);
+    padding: 40px;
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.personagens{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.personagem{
+    text-align: center;
+}
+
+.personagem img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    border: 4px solid white;
+    background: transparent;
+}
+
+.personagem p{
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.noticia:hover{
+    transform: scale(1.02);
+}
+
+.personagem:hover{
+    transform: scale(1.02);
+}
+
+.posicao h2{
+    background: linear-gradient(10deg, #e0bf00, #ffef94, #e0bf00);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #7d499e;
+}
+
+.bottom-fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
 }
